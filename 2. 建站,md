@@ -1,0 +1,28 @@
+# 建站
+安装Hexo完成后，请执行以下命令，Hexo将会在指定的文件夹中.
+```txt
+hexo init <folder>
+cd <folder>
+npm install
+
+```
+新建完成后，指定文件夹的目录如下：
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+
+_config.yml
+网站的配置信息，您可以在此配置大部分的参数
+package.json
+应用程序的信息，EJS Stylus 和Markdown renderer已默认安装，您可以自由移除
+scaffolds
+模板文件夹，当您新建文章时，hexo会根据scaffold来建立文件
+Hexo的模板是指在新建的文章文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。
+source
+资源文件夹是存放用户资源的地方。除_posts文件夹之外，开头命名为_（下划线）的文件/文件夹和隐藏的文件将会被忽略。Markdown和HTML文件会被解析兵放到Public文件夹，而其他的文件会被拷贝过去
+themes
+主题文件夹，Hexo会根据主题来生成静态页面
